@@ -4,7 +4,8 @@ node_js:
   - 10
 
 install:
-  - yarn link
+  - git clone https://github.com/silverstripe/webpack-config.git
+  - (cd webpack-config && yarn link)
   - git clone https://github.com/silverstripe/silverstripe-admin.git
   - (cd silverstripe-admin && yarn install && yarn link @silverstripe/webpack-config)
 
