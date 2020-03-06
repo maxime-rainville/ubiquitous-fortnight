@@ -9,7 +9,7 @@ install:
   - (cd webpack-config && yarn link)
   - git clone https://github.com/silverstripe/silverstripe-admin.git
   - (cd silverstripe-admin && yarn install && yarn link @silverstripe/webpack-config)
-  - (cd silverstripe-admin && yarn add extract-text-webpack-plugin ^2)
+  - (cd silverstripe-admin && yarn add extract-text-webpack-plugin@^2)
 
 script:
   - (cd silverstripe-admin && yarn build)
