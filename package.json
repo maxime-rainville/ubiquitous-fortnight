@@ -1,0 +1,9 @@
+{
+  "name": "ubiquitous-fortnight",
+  "version": "0.0.0",
+  "description": "Just a test",
+  "main": "index.js",
+  "repository": "git@github.com:maxime-rainville/ubiquitous-fortnight.git",
+  "author": "Maxime Rainville <maxime@silverstripe.com>",
+  "license": "MIT"
+}

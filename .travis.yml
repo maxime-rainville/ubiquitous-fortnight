@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - 10
+
+install:
+  - yarn link
+  - git clone git@github.com:silverstripe/silverstripe-admin.git
+  - (cd silverstripe-admin && yarn install && yarn link @silverstripe/webpack-config)
+
+script:
+  - (cd silverstripe-admin && yarn build)
